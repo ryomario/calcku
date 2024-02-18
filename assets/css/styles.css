@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Digital mono";
+    src: url(../fonts/digital-7\ \(mono\).ttf);
+}
+
+.ff-digital {
+    font-family: "Digital mono", droid-sans;
+}
+
+.calc-board * {
+    transition: all 200ms;
+}
+.calc-board :not(.active){
+    scale: .7;
+    opacity: .7;
+}
+.numpad .btn-lg {
+    font-size: larger;
+}
+.numpad button {
+    width: 100px;
+    height: 100px;
+}
+.numpad button.margined {
+    --margin: 4px;
+    width: calc(100px - (2 * var(--margin)));
+    height: calc(100px - (2 * var(--margin)));
+    margin: var(--margin);
+}
+.numpad table,
+.numpad table tr,
+.numpad table td {
+    border: 0;
+    border-collapse: collapse;
+    padding: 0;
+}
